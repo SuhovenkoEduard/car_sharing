@@ -1,10 +1,12 @@
 import React, { ReactElement } from 'react'
 import { OverlayButton } from './OverlayButton'
+import { useNavigate } from 'react-router-dom'
 
 export const HomePage = (): ReactElement => {
+  const navigate = useNavigate()
   return (
     <div className="home-page">
-      <OverlayButton top={542} left={100} width={442} height={100} onClick={() => console.log('fix later [home page]')} />
+      <OverlayButton top={542} left={100} width={442} height={100} onClick={() => navigate('/cars')} />
     </div>
   )
 }

@@ -38,7 +38,7 @@ export const Main = (): ReactElement => {
       imageUrl: '../images/cars-page.png',
       imageWidth: 1440,
       imageHeight: 1269,
-      pagesCount: 1.5
+      pagesCount: 1
     },
     {
       title: 'О нас',
@@ -73,8 +73,8 @@ export const Main = (): ReactElement => {
 
   const styles = {
     backgroundImage: `url(${currentTab.imageUrl})`,
-    // backgroundSize: `${currentTab.imageWidth}px ${currentTab.imageHeight}px`,
-    height: `${100 * currentTab.pagesCount}vh`
+    backgroundSize: `${currentTab.imageWidth}px ${currentTab.imageHeight}px`,
+    height: `${currentTab.imageHeight}px`
   }
 
   return (
