@@ -3,7 +3,7 @@ import { TABS } from '../constants/constants'
 import { OverlayButton } from './OverlayButton'
 import { useNavigate } from 'react-router-dom'
 
-import '../scss/Header.scss'
+import '../scss/header.scss'
 
 export const Header = (): ReactElement => {
   const navigate = useNavigate()

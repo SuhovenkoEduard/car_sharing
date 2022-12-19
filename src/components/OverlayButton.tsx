@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 
-import '../scss/OverlayButton.scss'
+import '../scss/overlay-button.scss'
 
 export const OverlayButton = ({
   top,

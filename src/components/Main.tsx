@@ -7,7 +7,7 @@ import { Footer } from './Footer'
 import { TABS } from '../constants/constants'
 import { CarSharingRoutes } from '../types/types'
 
-import '../scss/Main.scss'
+import '../scss/main.scss'
 
 export const Main = (): ReactElement => {
   const location = useLocation()

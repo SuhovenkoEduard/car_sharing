@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react'
+import { CARS } from '../constants/constants'
+import { CarCard } from './CarCard'
 
-import '../scss/CarsPage.scss'
+import '../scss/cars-page.scss'
 
 export const CarsPage = (): ReactElement => {
   return (
@@ -106,12 +108,9 @@ export const CarsPage = (): ReactElement => {
           </div>
         </div>
         <div className="cars-list-container">
-          <div className="car-card">Car 1</div>
-          <div className="car-card">Car 2</div>
-          <div className="car-card">Car 3</div>
-          <div className="car-card">Car 4</div>
-          <div className="car-card">Car 5</div>
-          <div className="car-card">Car 6</div>
+          {CARS.map((car, index) => (
+            <CarCard key={index} {...car} />
+          ))}
         </div>
       </div>
     </div>

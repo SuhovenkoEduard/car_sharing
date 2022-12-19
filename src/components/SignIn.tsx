@@ -4,7 +4,7 @@ import { ReactComponent as SocialsSVG } from '../images/socials.svg'
 import { useNavigate } from 'react-router-dom'
 import { CarSharingRoutes } from '../types/types'
 
-import '../scss/SignIn.scss'
+import '../scss/sign-in.scss'
 
 export const SignIn = (): ReactElement => {
   const navigate = useNavigate()

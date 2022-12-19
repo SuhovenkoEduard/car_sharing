@@ -5,7 +5,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { SignUp } from './SignUp'
 import { CarSharingRoutes } from '../types/types'
 
-import '../scss/App.scss'
+import '../scss/app.scss'
 
 export const App = (): ReactElement => {
   return (
