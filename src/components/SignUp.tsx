@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from 'react'
 import { FormControl, Checkbox } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { ReactComponent as SocialsSVG } from '../images/socials.svg'
+import { CarSharingRoutes } from '../types/types'
 
 import '../scss/SignUp.scss'
 
@@ -40,12 +41,12 @@ export const SignUp = (): ReactElement => {
             </span>
           </div>
           <div className="authorization-button">
-            <button type="button" onClick={() => navigate('/home')}>Зарегистрироваться</button>
+            <button type="button" onClick={() => navigate(CarSharingRoutes.home)}>Зарегистрироваться</button>
           </div>
           <div className="sign-in-link-container">
             <span>У вас уже есть учётная запись?</span>
             <button type="button" className="highlighted-label">
-              <a href="javascript:void(0);" onClick={() => navigate('/sign-in')}>Авторизоваться</a>
+              <a href="javascript:void(0);" onClick={() => navigate(CarSharingRoutes.signIn)}>Авторизоваться</a>
             </button>
           </div>
           <hr style={{ width: '483px', marginLeft: '-48px', border: '1px solid #E5E8ED' }}/>
