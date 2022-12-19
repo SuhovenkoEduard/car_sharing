@@ -1,46 +1,11 @@
 .main-page {
   overflow-y: scroll;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  .header, .footer {
-    border: 1px solid black;
+  .page-content {
+    height: 100%;
   }
-
-  .header {
-    padding-left: 100px;
-    height: 68px;
-    display: flex;
-    align-items: center;
-    gap: 74px;
-
-    .tabs {
-      display: flex;
-      gap: 34px;
-      .tab {
-        cursor: pointer;
-        height: 15px;
-      }
-      .home {
-        width: 57px;
-      }
-      .cars {
-        width: 68px;
-      }
-      .about {
-        width: 45px;
-      }
-      .comments {
-        width: 120px;
-      }
-    }
-  }
-  .footer {
-    height: 98px;
-  }
-
   .cursor-hider {
     background: #F6F7F9;
     border: none;

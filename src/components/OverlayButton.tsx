@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import '../scss/OverlayButton.scss'
 
@@ -7,7 +8,7 @@ export const OverlayButton = ({
   left,
   width,
   height,
-  onClick,
+  navigatePath,
   text,
   className
 }: {
@@ -15,19 +16,25 @@ export const OverlayButton = ({
   left: number
   width: number
   height: number
-  onClick: () => void
+  navigatePath: string
   text?: string
   className?: string
 }): ReactElement => {
+  const navigate = useNavigate()
   const styles = {
     top: `${top}px`,
     left: `${left}px`,
     width: `${width}px`,
     height: `${height}px`
   }
+
+  const definedClassName = (className != null) ? className : ''
+
   return (
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    <button className={`overlay-button ${className}`} type="button" style={{ ...styles }} onClick={onClick}>
+    <button
+      className={`overlay-button ${definedClassName}`}
+      type="button" style={{ ...styles }}
+      onClick={() => navigate(navigatePath)}>
       {text}
     </button>
   )
