@@ -4,8 +4,8 @@ import { HomePage } from './HomePage'
 import { CarsPage } from './CarsPage'
 import { Header } from './Header'
 import { Footer } from './Footer'
-
 import { TABS } from '../constants/constants'
+import { CarSharingRoutes } from '../types/types'
 
 import '../scss/Main.scss'
 
@@ -14,7 +14,7 @@ export const Main = (): ReactElement => {
   const { pathname: url } = location
 
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const currentTab = TABS.find(tab => url === `/${tab.name}`)!
+  const currentTab = TABS.find(tab => url === tab.navigatePath)!
 
   const styles = currentTab.isDisplayBackgroundImage
     ? {
@@ -29,10 +29,10 @@ export const Main = (): ReactElement => {
     <div className="main-page">
       <Header/>
       <div className="page-content" style={styles}>
-        {url === '/home' && (
+        {url === CarSharingRoutes.home && (
           <HomePage />
         )}
-        {url === '/cars' && (
+        {url === CarSharingRoutes.cars && (
           <CarsPage/>
         )}
       </div>

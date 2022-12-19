@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 import '../scss/OverlayButton.scss'
 
@@ -8,7 +7,7 @@ export const OverlayButton = ({
   left,
   width,
   height,
-  navigatePath,
+  onClick,
   text,
   className
 }: {
@@ -16,11 +15,10 @@ export const OverlayButton = ({
   left: number
   width: number
   height: number
-  navigatePath: string
+  onClick?: () => void
   text?: string
   className?: string
 }): ReactElement => {
-  const navigate = useNavigate()
   const styles = {
     top: `${top}px`,
     left: `${left}px`,
@@ -34,7 +32,7 @@ export const OverlayButton = ({
     <button
       className={`overlay-button ${definedClassName}`}
       type="button" style={{ ...styles }}
-      onClick={() => navigate(navigatePath)}>
+      onClick={onClick}>
       {text}
     </button>
   )

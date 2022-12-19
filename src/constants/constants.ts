@@ -1,3 +1,5 @@
+import { CarSharingRoutes } from '../types/types'
+
 export const TABS = [
   {
     title: 'Главная',
@@ -6,7 +8,7 @@ export const TABS = [
     left: 250,
     width: 57,
     height: 17,
-    navigatePath: '/home',
+    navigatePath: CarSharingRoutes.home,
     imageUrl: '',
     imageWidth: 1440,
     imageHeight: 2060,
@@ -19,7 +21,7 @@ export const TABS = [
     left: 341,
     width: 68,
     height: 17,
-    navigatePath: '/cars',
+    navigatePath: CarSharingRoutes.cars,
     imageUrl: '../images/cars-page.png',
     imageWidth: 1440,
     imageHeight: 1269,
@@ -32,7 +34,7 @@ export const TABS = [
     left: 443,
     width: 45,
     height: 17,
-    navigatePath: '/about',
+    navigatePath: CarSharingRoutes.about,
     imageUrl: '..images/about-page.png',
     imageWidth: 1440,
     imageHeight: 1269,
@@ -45,7 +47,7 @@ export const TABS = [
     left: 530,
     width: 113,
     height: 17,
-    navigatePath: '/comments',
+    navigatePath: CarSharingRoutes.comments,
     imageUrl: '..images/comments-page.png',
     imageWidth: 1440,
     imageHeight: 1269,

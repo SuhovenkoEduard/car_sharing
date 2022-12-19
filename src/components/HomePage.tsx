@@ -1,13 +1,15 @@
 import React, { ReactElement } from 'react'
 import { OverlayButton } from './OverlayButton'
+import { useNavigate } from 'react-router-dom'
 
 import '../scss/HomePage.scss'
 
 export const HomePage = (): ReactElement => {
+  const navigate = useNavigate()
   return (
     <div className="home-page">
-      <OverlayButton className="cursor-hider" top={1779} left={1318} width={22} height={21} navigatePath="" />
-      <OverlayButton top={540} left={100} width={442} height={101} navigatePath='/cars' />
+      <OverlayButton className="cursor-hider" top={1779} left={1318} width={22} height={21} />
+      <OverlayButton top={540} left={100} width={442} height={101} onClick={() => navigate('/cars')} />
     </div>
   )
 }
