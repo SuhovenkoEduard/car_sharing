@@ -1,0 +1,55 @@
+.cars-page {
+  .route-controls {
+    .controls-description {
+      .cars-page-header {}
+      .description {}
+      .users-recommendations {
+        .users {
+          .user {}
+        }
+      }
+      .trust-info {
+        .stars {
+          .star {}
+        }
+        .trust-label {}
+      }
+    }
+    .controls-container {
+      // inside
+      .control {
+
+      }
+      .left {
+        .from-input {}
+        .start-date-input {}
+        .end-date-input {}
+      }
+      .right {
+        .to-input {}
+        .start-time-input {}
+        .end-time-input {}
+      }
+    }
+  }
+  .main-content {
+    .filters-container {
+      .cars-page-header {}
+      // inside
+      .filter-label {
+      }
+      // inside
+      .filter-controls {
+        .filter-checkbox {
+
+        }
+      }
+      .car-type {}
+      .car-capacity {}
+      .car-rate {}
+    }
+    .cars-list-container {
+      .car-card {}
+    }
+  }
+}

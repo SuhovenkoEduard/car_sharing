@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { HomePage } from './HomePage'
 import { OverlayButton } from './OverlayButton'
+import { CarsPage } from './CarsPage'
 
 // import { ReactComponent as LeverY } from '../images/LeverY.svg'
 
@@ -25,7 +26,7 @@ export const Main = (): ReactElement => {
       imageUrl: '../images/home-page.png',
       imageWidth: 1440,
       imageHeight: 2228,
-      pagesCount: 3
+      isDisplayBackgroundImage: true
     },
     {
       title: 'Машины',
@@ -38,7 +39,7 @@ export const Main = (): ReactElement => {
       imageUrl: '../images/cars-page.png',
       imageWidth: 1440,
       imageHeight: 1269,
-      pagesCount: 1
+      isDisplayBackgroundImage: false
     },
     {
       title: 'О нас',
@@ -51,7 +52,7 @@ export const Main = (): ReactElement => {
       imageUrl: '..images/about-page.png',
       imageWidth: 1440,
       imageHeight: 1269,
-      pagesCount: 1
+      isDisplayBackgroundImage: true
     },
     {
       title: 'Комментарии',
@@ -64,18 +65,20 @@ export const Main = (): ReactElement => {
       imageUrl: '..images/comments-page.png',
       imageWidth: 1440,
       imageHeight: 1269,
-      pagesCount: 1
+      isDisplayBackgroundImage: true
     }
   ]
 
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const currentTab = tabs.find(tab => url === `/${tab.name}`)!
 
-  const styles = {
-    backgroundImage: `url(${currentTab.imageUrl})`,
-    backgroundSize: `${currentTab.imageWidth}px ${currentTab.imageHeight}px`,
-    height: `${currentTab.imageHeight}px`
-  }
+  const styles = currentTab.isDisplayBackgroundImage
+    ? {
+        backgroundImage: `url(${currentTab.imageUrl})`,
+        backgroundSize: `${currentTab.imageWidth}px ${currentTab.imageHeight}px`,
+        height: `${currentTab.imageHeight}px`
+      }
+    : {}
 
   return (
       <div className="main-page" style={styles}>
@@ -87,12 +90,12 @@ export const Main = (): ReactElement => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="page-content">
           {url === '/home' && (
             <HomePage />
           )}
           {url === '/cars' && (
-            <div>Cars</div>
+            <CarsPage />
           )}
         </div>
         <div className="footer" />
