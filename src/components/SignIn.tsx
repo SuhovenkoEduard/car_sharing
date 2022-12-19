@@ -2,9 +2,9 @@ import React, { ReactElement, useState } from 'react'
 import { FormControl, Checkbox } from '@mui/material'
 
 import { ReactComponent as SocialsSVG } from '../images/socials.svg'
+import { useNavigate } from 'react-router-dom'
 
 import '../scss/SignIn.scss'
-import { useNavigate } from 'react-router-dom'
 
 export const SignIn = (): ReactElement => {
   const navigate = useNavigate()

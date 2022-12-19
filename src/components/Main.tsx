@@ -76,7 +76,8 @@ export const Main = (): ReactElement => {
     ? {
         backgroundImage: `url(${currentTab.imageUrl})`,
         backgroundSize: `${currentTab.imageWidth}px ${currentTab.imageHeight}px`,
-        height: `${currentTab.imageHeight}px`
+        height: `${currentTab.imageHeight}px`,
+        backgroundRepeat: 'no-repeat'
       }
     : {}
 

@@ -16,8 +16,9 @@
   .sign-in-form {
     position: relative;
     width: 1323px;
-    height: 925px;
+    height: 800px;
     background-image: url("../images/sign-in-background.png");
+    background-repeat: no-repeat;
 
     display: flex;
     .actual-form {

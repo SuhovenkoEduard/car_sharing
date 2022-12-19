@@ -16,14 +16,15 @@
   .sign-up-form {
     position: relative;
     width: 1264px;
-    height: 1020px;
+    height: 840px;
     background-image: url("../images/sign-up-background.png");
+    background-repeat: no-repeat;
 
     display: flex;
     .actual-form {
-      gap: 24px;
+      gap: 18px;
       padding: 48px;
-      top: 102px;
+      top: 48px;
       left: 396px;
       width: 400px;
       height: 570px;
