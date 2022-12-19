@@ -1,11 +1,11 @@
 .global-header {
-  background-image: url("../../public/images/header-background.png");
-
   padding-left: 100px;
   height: 68px;
   display: flex;
   align-items: center;
   gap: 74px;
+
+  background-size: 1440px 68px;
 
   .tabs {
     display: flex;
