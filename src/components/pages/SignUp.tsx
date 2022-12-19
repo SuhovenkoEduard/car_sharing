@@ -23,11 +23,11 @@ export const SignUp = (): ReactElement => {
             </div>
             <div className="email-container">
               <div className="inputLabel">Почта</div>
-              <input id="email" />
+              <input id="email" type="email" />
             </div>
             <div className="password-container">
               <div className="inputLabel">Пароль</div>
-              <input id="password" />
+              <input id="password" type="password" />
             </div>
             <div className="repeated-password-container">
               <div className="inputLabel">Подтвердите пароль</div>

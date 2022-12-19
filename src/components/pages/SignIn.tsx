@@ -41,14 +41,18 @@ export const SignIn = (): ReactElement => {
   const [password, setPassword] = useState<string>('')
 
   const handleSubmit = (): void => {
-    const isAuthorised = REGISTERED_USERS.find((user: User) => user.login === login && user.password === password) !== undefined
+    const user = REGISTERED_USERS.find((user: User) => user.login === login && user.password === password)
 
-    if (isAuthorised) {
-      localStorage.setItem('login', login)
-      localStorage.setItem('password', password)
+    if (user != null) {
+      localStorage.setItem('role', user.role)
+      localStorage.setItem('roleName', user.roleName)
+      localStorage.setItem('login', user.login)
+      localStorage.setItem('password', user.password)
       navigate(CarSharingRoutes.home)
     } else {
       alert('Неправильный логин или пароль')
+      localStorage.setItem('role', '')
+      localStorage.setItem('roleName', '')
       localStorage.setItem('login', '')
       localStorage.setItem('password', '')
     }
@@ -65,13 +69,13 @@ export const SignIn = (): ReactElement => {
           <div className="inputs">
             <div className="email-container">
               <div className="inputLabel">Почта</div>
-              <input id="email" value={login} onChange={(event) => {
+              <input id="email" value={login} type="email" onChange={(event) => {
                 setLogin(event.target.value)
               }}/>
             </div>
             <div className="password-container">
               <div className="inputLabel">Пароль</div>
-              <input id="password" value={password} onChange={(event) => {
+              <input id="password" value={password} type="password" onChange={(event) => {
                 setPassword(event.target.value)
               }}/>
             </div>
