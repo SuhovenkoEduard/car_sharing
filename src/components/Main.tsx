@@ -4,7 +4,6 @@ import { HomePage } from './HomePage'
 import { CarsPage } from './CarsPage'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { OverlayButton } from './OverlayButton'
 
 import { TABS } from '../constants/constants'
 
@@ -27,14 +26,11 @@ export const Main = (): ReactElement => {
     : {}
 
   return (
-    <div className="main-page" style={styles}>
+    <div className="main-page">
       <Header/>
-      <div className="page-content">
+      <div className="page-content" style={styles}>
         {url === '/home' && (
-          <>
-            <OverlayButton className="cursor-hider" top={1780} left={1318} width={22} height={21} onClick={() => console.log('cursor')}/>
-            <HomePage />
-          </>
+          <HomePage />
         )}
         {url === '/cars' && (
           <CarsPage/>

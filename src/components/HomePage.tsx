@@ -6,7 +6,8 @@ import '../scss/HomePage.scss'
 export const HomePage = (): ReactElement => {
   return (
     <div className="home-page">
-      <OverlayButton top={540} left={100} width={442} height={100} navigatePath='/cars' />
+      <OverlayButton className="cursor-hider" top={1779} left={1318} width={22} height={21} navigatePath="" />
+      <OverlayButton top={540} left={100} width={442} height={101} navigatePath='/cars' />
     </div>
   )
 }

@@ -7,7 +7,7 @@ export const TABS = [
     width: 57,
     height: 17,
     navigatePath: '/home',
-    // imageUrl: '../images/home-page.png',
+    imageUrl: '',
     imageWidth: 1440,
     imageHeight: 2060,
     isDisplayBackgroundImage: true
