@@ -146,6 +146,9 @@
       row-gap: 76px;
       flex-wrap: wrap;
       .car-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 281px;
         height: 258px;
         background: #FFFFFF;

@@ -93,7 +93,10 @@ export const Main = (): ReactElement => {
         </div>
         <div className="page-content">
           {url === '/home' && (
-            <HomePage />
+            <>
+              <OverlayButton className="cursor-hider" top={1780} left={1318} width={22} height={21} onClick={() => console.log('cursor')}/>
+              <HomePage />
+            </>
           )}
           {url === '/cars' && (
             <CarsPage />
