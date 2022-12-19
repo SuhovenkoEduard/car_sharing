@@ -90,7 +90,7 @@ export const CARS: Car[] = [
     transmission: CarTransmissions.manual,
     costPerDay: 468,
     imageUrl: './images/cars/porsche-911-turbo.svg',
-    active: true
+    active: false
   },
   {
     name: 'Porsche Taycan 4S',
@@ -99,7 +99,7 @@ export const CARS: Car[] = [
     transmission: CarTransmissions.manual,
     costPerDay: 424,
     imageUrl: './images/cars/porsche-taycan-4s.svg',
-    active: true
+    active: false
   },
   {
     name: 'Mini Cooper WORKS...',
@@ -108,6 +108,6 @@ export const CARS: Car[] = [
     transmission: CarTransmissions.manual,
     costPerDay: 360,
     imageUrl: './images/cars/mini-cooper.svg',
-    active: true
+    active: false
   }
 ]

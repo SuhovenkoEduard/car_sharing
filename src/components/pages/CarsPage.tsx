@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
-import { CARS } from '../constants/constants'
-import { CarCard } from './CarCard'
+import { CARS } from '../../constants/constants'
+import { CarCard } from '../CarCard'
 
-import '../scss/cars-page.scss'
+import '../../scss/cars-page.scss'
 
 export const CarsPage = (): ReactElement => {
   return (

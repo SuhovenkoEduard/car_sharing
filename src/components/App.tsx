@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
-import { SignIn } from './SignIn'
+import { SignIn } from './pages/SignIn'
 import { Main } from './Main'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { SignUp } from './SignUp'
+import { SignUp } from './pages/SignUp'
 import { CarSharingRoutes } from '../types/types'
 
 import '../scss/app.scss'

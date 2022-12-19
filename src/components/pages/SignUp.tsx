@@ -1,10 +1,10 @@
 import React, { ReactElement, useState } from 'react'
 import { FormControl, Checkbox } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import { ReactComponent as SocialsSVG } from '../images/socials.svg'
-import { CarSharingRoutes } from '../types/types'
+import { ReactComponent as SocialsSVG } from '../../images/socials.svg'
+import { CarSharingRoutes } from '../../types/types'
 
-import '../scss/sign-up.scss'
+import '../../scss/sign-up.scss'
 
 export const SignUp = (): ReactElement => {
   const navigate = useNavigate()

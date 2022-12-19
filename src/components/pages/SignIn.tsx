@@ -1,10 +1,10 @@
 import React, { ReactElement, useState } from 'react'
 import { Checkbox, FormControl } from '@mui/material'
-import { ReactComponent as SocialsSVG } from '../images/socials.svg'
+import { ReactComponent as SocialsSVG } from '../../images/socials.svg'
 import { useNavigate } from 'react-router-dom'
-import { CarSharingRoutes } from '../types/types'
+import { CarSharingRoutes } from '../../types/types'
 
-import '../scss/sign-in.scss'
+import '../../scss/sign-in.scss'
 
 interface User {
   role: string

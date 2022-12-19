@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react'
 import { useLocation } from 'react-router-dom'
-import { HomePage } from './HomePage'
-import { CarsPage } from './CarsPage'
-import { Header } from './Header'
-import { Footer } from './Footer'
+import { HomePage } from './pages/HomePage'
+import { CarsPage } from './pages/CarsPage'
+import { Header } from './layout/Header'
+import { Footer } from './layout/Footer'
 import { TABS } from '../constants/constants'
 import { CarSharingRoutes } from '../types/types'
 

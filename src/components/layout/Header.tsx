@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react'
-import { TABS } from '../constants/constants'
-import { OverlayButton } from './OverlayButton'
+import { TABS } from '../../constants/constants'
+import { OverlayButton } from '../OverlayButton'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-import '../scss/header.scss'
+import '../../scss/header.scss'
 
 export const Header = (): ReactElement => {
   const location = useLocation()

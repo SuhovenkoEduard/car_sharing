@@ -3,24 +3,79 @@
   box-shadow: 0 2px 4px rgba(76, 92, 107, 0.15), 0 18px 36px rgba(166, 175, 186, 0.2);
   border-radius: 24px;
   padding: 30px;
+  width: 221px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 
   .car-card-top-row {
+    display: flex;
+    justify-content: space-between;
     .car-name-container {
-      .car-name {}
-      .car-type {}
+      .car-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+      .car-type {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #A6AFBA;
+      }
     }
     .active-icon {}
   }
-  .car-card-image {}
+  .car-card-image {
+    img {
+      pointer-events: none;
+      user-select: none;
+    }
+  }
   .car-card-bottom-row {
+    display: flex;
+    justify-content: space-between;
     .car-capacity-container {
-      .car-capacity {}
+      display: flex;
+      gap: 11px;
+      .car-capacity {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #A6AFBA;
+      }
     }
     .car-transmission-container {
-      .car-transmission {}
+      display: flex;
+      gap: 8px;
+      .car-transmission {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #A6AFBA;
+      }
     }
     .car-cost-per-day-container {
-      .car-cost-per-day-time-period {}
+      .car-cost-per-day {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #13171B;
+      }
+      .car-cost-per-day-time-period {
+        color: #A6AFBA;
+        font-size: 16px;
+        font-weight: 600;
+      }
     }
   }
 }

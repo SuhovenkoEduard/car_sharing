@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
-import { OverlayButton } from './OverlayButton'
+import { OverlayButton } from '../OverlayButton'
 import { useNavigate } from 'react-router-dom'
 
-import '../scss/home-page.scss'
+import '../../scss/home-page.scss'
 
 export const HomePage = (): ReactElement => {
   const navigate = useNavigate()
