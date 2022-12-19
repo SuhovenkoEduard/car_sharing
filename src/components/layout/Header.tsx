@@ -12,7 +12,7 @@ export const Header = (): ReactElement => {
   const localPath = url.slice(1, url.length)
   console.log(localPath)
 
-  const backgroundImageUrl = `./images/header/${localPath}.png`
+  const backgroundImageUrl = `../images/header/${localPath}.png`
 
   const navigate = useNavigate()
   return (
